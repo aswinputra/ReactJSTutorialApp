@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Counters from "./components/counters";
 import NavBar from "./components/navbar";
-import { createVerify } from "crypto";
 
 class App extends Component {
   state = {
