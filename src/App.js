@@ -12,6 +12,16 @@ class App extends Component {
       { id: 4, value: 4 }
     ]
   };
+  constructor() {
+    super();
+    console.log("Constructor-call first");
+  }
+
+  componentDidMount() {
+    //Ajax Call
+    //this.setState({call API})
+    console.log("Mounted - call Last");
+  }
 
   handleIncrement = counter => {
     const counters = [...this.state.counters];
@@ -42,6 +52,7 @@ class App extends Component {
     this.setState({ counters });
   };
   render() {
+    console.log("Rendered-called second");
     return (
       <React.Fragment>
         <NavBar
